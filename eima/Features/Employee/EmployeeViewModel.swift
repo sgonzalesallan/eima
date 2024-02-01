@@ -44,7 +44,7 @@ class EmployeeViewModel: ObservableObject {
     }
     
     func updateEmployee() async {
-        guard let id = self.companyId, let employeeId = self.employee?.id else {
+        guard let id = self.companyId else {
             return }
         
         guard let _ = self.employee else { return }
